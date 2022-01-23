@@ -2,7 +2,13 @@
 # It can be edited online at https://dandiarchive.org/dandiset/000218
 # and obtained from the dandiarchive.
 '@context': https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json
-about: []
+about:
+- identifier: http://purl.obolibrary.org/obo/UBERON_0002421
+  name: hippocampal formation
+  schemaKey: Anatomy
+- identifier: http://purl.obolibrary.org/obo/UBERON_0007628
+  name: Lateral Septum Complex
+  schemaKey: Anatomy
 access:
 - schemaKey: AccessRequirements
   status: dandi:OpenAccess
@@ -28,6 +34,33 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
+- awardNumber: MH54671, MH107396, U19 NS107616, U19 NS104590, and NS090583
+  contactPoint: []
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- awardNumber: NSF PIRE grant (no. 1545858)
+  contactPoint: []
+  identifier: https://ror.org/021nxhr62
+  includeInCitation: false
+  name: National Science Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nsf.gov/
+- awardNumber: '351109'
+  contactPoint: []
+  identifier: https://ror.org/01cmst727
+  includeInCitation: false
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.thesimonsfoundation.ca/
 dateCreated: '2022-01-23T15:42:50.388823+00:00'
 description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) have
   been studied extensively. Because hippocampal outputs affect not only cortical but
@@ -45,13 +78,23 @@ description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) h
 ethicsApproval: []
 id: DANDI:000218/draft
 identifier: DANDI:000218
-keywords: []
-license: []
+keywords:
+- hippocampus
+- lateral septum
+- electrophyisology
+license:
+- spdx:CC-BY-4.0
 manifestLocation:
 - https://api.dandiarchive.org/api/dandisets/000218/versions/draft/assets/
 name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
 protocol: []
-relatedResource: []
+relatedResource:
+- identifier: https://doi.org/10.1016/j.neuron.2019.10.012
+  name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
+  relation: dcite:IsDescribedBy
+  repository: Neuron
+  schemaKey: Resource
+  url: https://doi.org/10.1016/j.neuron.2019.10.012
 repository: https://dandiarchive.org/
 schemaKey: Dandiset
 schemaVersion: 0.6.2
