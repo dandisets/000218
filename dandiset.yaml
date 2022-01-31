@@ -50,8 +50,8 @@ assetsSummary:
   - ElectricalSeries
   - SpatialSeries
 citation: Tingley, David; Buzáki, Gyórgy (2022) Routing of Hippocampal Ripples to
-  Subcortical Structures via the Lateral Septum (Version draft) [Data set]. DANDI
-  archive. https://dandiarchive.org/dandiset/000218/draft
+  Subcortical Structures via the Lateral Septum (Version 0.220131.1608) [Data set].
+  DANDI archive. https://doi.org/10.48324/dandi.000218/0.220131.1608
 contributor:
 - affiliation: []
   includeInCitation: true
@@ -95,6 +95,7 @@ contributor:
   schemaKey: Organization
   url: http://www.thesimonsfoundation.ca/
 dateCreated: '2022-01-23T15:42:50.388823+00:00'
+datePublished: '2022-01-31T16:08:53.738121+00:00'
 description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) have
   been studied extensively. Because hippocampal outputs affect not only cortical but
   also subcortical targets, we examined the impact of SPW-Rs on the firing patterns
@@ -108,8 +109,9 @@ description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) h
   of spiking in SPW-Rs but instead correlated with the magnitude of excitatory synchrony
   of the hippocampal output. Thus, LS is strongly activated by SPW-Rs and may convey
   hippocampal population events to its hypothalamic and brainstem targets.
+doi: 10.48324/dandi.000218/0.220131.1608
 ethicsApproval: []
-id: DANDI:000218/draft
+id: DANDI:000218/0.220131.1608
 identifier: DANDI:000218
 keywords:
 - hippocampus
@@ -118,9 +120,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000218/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000218/0.220131.1608/assets.yaml
 name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
 protocol: []
+publishedBy:
+  endDate: '2022-01-31T16:08:53.738121+00:00'
+  id: urn:uuid:01273cc0-ced1-4c95-89d6-e6455371401c
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2022-01-31T16:08:53.738121+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:46ea9f0d-045b-4686-959f-d238ce3e6267
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1016/j.neuron.2019.10.012
   name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
@@ -132,6 +146,6 @@ repository: https://dandiarchive.org/
 schemaKey: Dandiset
 schemaVersion: 0.6.2
 studyTarget: []
-url: https://dandiarchive.org/dandiset/000218/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000218/0.220131.1608
+version: 0.220131.1608
 wasGeneratedBy: []
