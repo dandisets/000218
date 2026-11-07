@@ -36,8 +36,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1260296971805
-  numberOfFiles: 95
+  numberOfBytes: 1439915031087
+  numberOfFiles: 97
   numberOfSubjects: 7
   schemaKey: AssetsSummary
   species:
@@ -49,10 +49,10 @@ assetsSummary:
   - Units
   - ProcessingModule
   - Position
-  - CompassDirection
   - SpatialSeries
   - ElectricalSeries
   - ElectrodeGroup
+  - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
   Subcortical Structures via the Lateral Septum (Version draft) [Data set]. DANDI
   Archive. https://dandiarchive.org/dandiset/000218/draft
