@@ -30,13 +30,13 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1483056333776
+  numberOfBytes: 1515215607663
   numberOfFiles: 97
   numberOfSubjects: 7
   schemaKey: AssetsSummary
@@ -48,9 +48,9 @@ assetsSummary:
   - LFP
   - Units
   - ProcessingModule
+  - ElectricalSeries
   - Position
   - CompassDirection
-  - ElectricalSeries
   - SpatialSeries
   - ElectrodeGroup
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
