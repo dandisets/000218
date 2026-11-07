@@ -2389,15 +2389,15 @@
 },
 {
 "asset_id":
-"c47ab281-1159-4c49-a422-976503220d9c",
+"c4fcfc5d-e4a6-4e71-b0e0-ab68f0e07544",
 "blob":
-"d545caf1-6165-4cbf-943d-9d28ddec0d7d",
+"7d22710e-28a0-4de9-a19e-a7480ab8a4ea",
 "created":
-"2022-01-29T09:54:34.618378Z",
+"2026-11-07T04:21:56.754811Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.2/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -2411,48 +2411,61 @@
 [
 {
 "name":
-"electrophysiological approach",
+"behavioral approach",
 "schemaKey":
 "ApproachType"
 },
 {
 "name":
-"behavioral approach",
+"electrophysiological approach",
 "schemaKey":
 "ApproachType"
 }
 ],
 "blobDateModified":
-"2022-01-28T18:04:49.072000+00:00",
+"2026-11-07T04:13:53.531249Z",
 "contentSize":
-54472109213,
+54958300142,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/c47ab281-1159-4c49-a422-976503220d9c/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/d54/5ca/d545caf1-6165-4cbf-943d-9d28ddec0d7d"
+"https://api.dandiarchive.org/api/assets/c4fcfc5d-e4a6-4e71-b0e0-ab68f0e07544/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/7d2/271/7d22710e-28a0-4de9-a19e-a7480ab8a4ea"
 ],
 "dateModified":
-"2022-01-29T09:37:47.607455+00:00",
-"datePublished":
-"2022-01-31T16:08:55.713920+00:00",
+"2026-11-07T04:18:18.725921Z",
 "digest":
 {
 "dandi:dandi-etag":
-"fa02500063aa31aed64a094411f72b8f-812",
+"554171c0a83f514f1fe90054637dd574-819",
 "dandi:sha2-256":
-"a0ba8a7e253958763fb2f6ced89e2d4bc559cb6d8047c8c4decf5a291c9f09a3"
+"66452dbfff8568f7497552b37e197d0994c8a8f9974df256ce4f82d46b85cab6"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:c47ab281-1159-4c49-a422-976503220d9c",
+"dandiasset:c4fcfc5d-e4a6-4e71-b0e0-ab68f0e07544",
 "identifier":
-"c47ab281-1159-4c49-a422-976503220d9c",
+"c4fcfc5d-e4a6-4e71-b0e0-ab68f0e07544",
+"keywords":
+[
+"lateral septum",
+"hippocampus",
+"sharp-wave ripples",
+"high-frequency oscillations",
+"sleep",
+"silicon probe"
+],
 "measurementTechnique":
 [
 {
 "name":
-"behavioral technique",
+"multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"signal filtering technique",
 "schemaKey":
 "MeasurementTechniqueType"
 },
@@ -2464,54 +2477,61 @@
 },
 {
 "name":
-"signal filtering technique",
+"behavioral technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"analytical technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3036um-362um-20160215-160215-122710_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2022-01-31T16:08:55.713920+00:00",
-"id":
-"urn:uuid:bc0d9def-35de-4a91-be35-e55d743114f0",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2022-01-31T16:08:55.713920+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:973598f7-ae28-438d-b252-2331b74455b6",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1016/j.neuron.2019.10.012",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
-}
-]
+"Resource"
 },
-"repository":
-"https://dandiarchive.org/",
+{
+"identifier":
+"https://doi.org/10.1016/j.neuron.2018.04.028",
+"relation":
+"dcite:IsDescribedBy",
+"schemaKey":
+"Resource"
+}
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.2",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"LFP"
+"ElectricalSeries"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"SpatialSeries"
 },
 {
 "schemaKey":
@@ -2523,22 +2543,63 @@
 "schemaKey":
 "PropertyValue",
 "value":
+"LFP"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
 "Position"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"SpatialSeries"
+"CompassDirection"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ProcessingModule"
 }
 ],
 "wasAttributedTo":
 [
 {
+"age":
+{
+"schemaKey":
+"PropertyValue",
+"unitText":
+"ISO-8601 duration",
+"value":
+"/",
+"valueReference":
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"dandi:BirthReference"
+}
+},
 "identifier":
-"DT2",
+"src",
 "schemaKey":
 "Participant",
+"sex":
+{
+"name":
+"Unknown",
+"schemaKey":
+"SexType"
+},
 "species":
 {
 "identifier":
@@ -2547,6 +2608,13 @@
 "Rattus norvegicus - Norway rat",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"Long-Evans",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -2554,7 +2622,9 @@
 [
 {
 "description":
-"The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) have been studied extensively. Because hippocampal outputs affect not only cortical but also subcortical targets, we examined the impact of SPW-Rs on the firing patterns of lateral septal (LS) neurons in behaving rats. A large fraction of SPW-Rs were temporally locked to high-frequency oscillations (HFOs) (120–180 Hz) in LS, with strongest coupling during non-rapid eye movement (NREM) sleep, followed by waking immobility. However, coherence and spike-local field potential (LFP) coupling between the two structures were low, suggesting that HFOs are generated locally within the LS GABAergic population. This hypothesis was supported by optogenetic induction of HFOs in LS. Spiking of LS neurons was largely independent of the sequential order of spiking in SPW-Rs but instead correlated with the magnitude of excitatory synchrony of the hippocampal output. Thus, LS is strongly activated by SPW-Rs and may convey hippocampal population events to its hypothalamic and brainstem targets.",
+"Rat src, recorded with two silicon probes in the right hemisphere, one in the lateral septal nucleus ('ls') and one in the hippocampal formation ('hpc'), in the home cage before and after running on a maze. Task: wheel alternation (77 trials). The session name carries the depths 3036 um and 362 um (sessionInfo.depth is 3036, the first); which probe each depth belongs to and what it is measured from are not stored in the source. The session start time is the start of the recording, from the session name.",
+"endDate":
+"2016-02-15T16:06:19.648000-05:00",
 "identifier":
 "DT2_rPPC_rCCG_3036um_362um_20160215_160215_122710",
 "name":
@@ -2567,12 +2637,16 @@
 {
 "description":
 "Metadata generated by DANDI cli",
+"endDate":
+"2026-11-07T04:18:18.725897Z",
 "id":
-"urn:uuid:27a9ba92-296a-4c6e-996e-60342470f0ff",
+"urn:uuid:13f977e8-a046-422e-936d-2c84494a29b7",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
+"startDate":
+"2026-11-07T04:18:18.403286Z",
 "wasAssociatedWith":
 [
 {
@@ -2585,18 +2659,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.35.0"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2022-01-29T12:10:06.812493Z",
+"2026-11-07T04:21:56.754844Z",
 "path":
 "sub-DT2/sub-DT2_ses-DT2-rPPC-rCCG-3036um-362um-20160215-160215-122710_behavior+ecephys.nwb",
 "size":
-54472109213
+54958300142
 },
 {
 "asset_id":
