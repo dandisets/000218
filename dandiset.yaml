@@ -30,14 +30,14 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
-  - name: multi electrode extracellular electrophysiology recording technique
-    schemaKey: MeasurementTechniqueType
   - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1515215607663
-  numberOfFiles: 97
+  numberOfBytes: 1504158395389
+  numberOfFiles: 96
   numberOfSubjects: 7
   schemaKey: AssetsSummary
   species:
@@ -48,10 +48,10 @@ assetsSummary:
   - LFP
   - Units
   - ProcessingModule
-  - ElectricalSeries
   - Position
   - CompassDirection
   - SpatialSeries
+  - ElectricalSeries
   - ElectrodeGroup
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
   Subcortical Structures via the Lateral Septum (Version draft) [Data set]. DANDI
