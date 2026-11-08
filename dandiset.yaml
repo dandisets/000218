@@ -15,28 +15,28 @@ access:
   status: dandi:OpenAccess
 assetsSummary:
   approach:
-  - name: electrophysiological approach
-    schemaKey: ApproachType
   - name: behavioral approach
+    schemaKey: ApproachType
+  - name: electrophysiological approach
     schemaKey: ApproachType
   dataStandard:
   - identifier: RRID:SCR_015242
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: behavioral technique
-    schemaKey: MeasurementTechniqueType
-  - name: spike sorting technique
-    schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
+  - name: behavioral technique
+    schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1433061249090
+  - name: spike sorting technique
+    schemaKey: MeasurementTechniqueType
+  numberOfBytes: 1415196919093
   numberOfFiles: 97
   numberOfSubjects: 7
   schemaKey: AssetsSummary
@@ -45,13 +45,13 @@ assetsSummary:
     name: Rattus norvegicus - Norway rat
     schemaKey: SpeciesType
   variableMeasured:
-  - LFP
-  - Units
   - Position
+  - LFP
   - SpatialSeries
   - ProcessingModule
   - ElectricalSeries
   - ElectrodeGroup
+  - Units
   - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
   Subcortical Structures via the Lateral Septum (Version draft) [Data set]. DANDI
