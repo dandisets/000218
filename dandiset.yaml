@@ -24,33 +24,33 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: signal filtering technique
+  - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
-  - name: multi electrode extracellular electrophysiology recording technique
+  - name: surgical technique
+    schemaKey: MeasurementTechniqueType
+  - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
-  - name: surgical technique
+  - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  - name: spike sorting technique
-    schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1399151812267
-  numberOfFiles: 96
-  numberOfSubjects: 7
+  numberOfBytes: 1502116418668
+  numberOfFiles: 87
+  numberOfSubjects: 6
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
     name: Rattus norvegicus - Norway rat
     schemaKey: SpeciesType
   variableMeasured:
-  - Position
-  - LFP
   - SpatialSeries
-  - ProcessingModule
   - ElectricalSeries
   - ElectrodeGroup
+  - Position
+  - ProcessingModule
+  - LFP
   - Units
   - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
