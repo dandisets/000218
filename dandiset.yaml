@@ -36,8 +36,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: multi electrode extracellular electrophysiology recording technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1422957170986
-  numberOfFiles: 97
+  numberOfBytes: 1519004379730
+  numberOfFiles: 98
   numberOfSubjects: 6
   schemaKey: AssetsSummary
   species:
@@ -86,7 +86,7 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
-- awardNumber: MH54671, MH107396, U19 NS107616, U19 NS104590, and NS090583
+- awardNumber: MH54671
   contactPoint: []
   identifier: https://ror.org/01cwqze88
   includeInCitation: false
@@ -95,7 +95,7 @@ contributor:
   - dcite:Funder
   schemaKey: Organization
   url: http://www.nih.gov/
-- awardNumber: NSF PIRE grant (no. 1545858)
+- awardNumber: '1545858'
   contactPoint: []
   identifier: https://ror.org/021nxhr62
   includeInCitation: false
@@ -123,6 +123,38 @@ contributor:
   roleName:
   - dcite:DataCurator
   schemaKey: Person
+- awardNumber: MH107396
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- awardNumber: U19 NS107616
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- awardNumber: U19 NS104590
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
+- awardNumber: NS090583
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.nih.gov/
 dateCreated: '2022-01-23T15:42:50.388823+00:00'
 description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) have
   been studied extensively. Because hippocampal outputs affect not only cortical but
@@ -143,7 +175,7 @@ identifier: DANDI:000218
 keywords:
 - hippocampus
 - lateral septum
-- electrophyisology
+- electrophysiology
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
