@@ -54,8 +54,8 @@ assetsSummary:
   - Units
   - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Routing of Hippocampal Ripples to
-  Subcortical Structures via the Lateral Septum (Version draft) [Data set]. DANDI
-  Archive. https://dandiarchive.org/dandiset/000218/draft
+  Subcortical Structures via the Lateral Septum (Version 0.261110.1911) [Data set].
+  DANDI Archive. https://doi.org/10.48324/dandi.000218/0.261110.1911
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -156,6 +156,7 @@ contributor:
   schemaKey: Organization
   url: http://www.nih.gov/
 dateCreated: '2022-01-23T15:42:50.388823+00:00'
+datePublished: '2026-11-10T19:11:34.761296+00:00'
 description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) have
   been studied extensively. Because hippocampal outputs affect not only cortical but
   also subcortical targets, we examined the impact of SPW-Rs on the firing patterns
@@ -169,8 +170,9 @@ description: The mnemonic functions of hippocampal sharp wave ripples (SPW-Rs) h
   of spiking in SPW-Rs but instead correlated with the magnitude of excitatory synchrony
   of the hippocampal output. Thus, LS is strongly activated by SPW-Rs and may convey
   hippocampal population events to its hypothalamic and brainstem targets.
+doi: 10.48324/dandi.000218/0.261110.1911
 ethicsApproval: []
-id: DANDI:000218/draft
+id: DANDI:000218/0.261110.1911
 identifier: DANDI:000218
 keywords:
 - hippocampus
@@ -179,8 +181,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000218/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000218/0.261110.1911/assets.yaml
 name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
+publishedBy:
+  endDate: '2026-11-10T19:11:34.761296+00:00'
+  id: urn:uuid:ae7ddcbf-d556-40ba-8320-19a4851d56bf
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-10T19:11:34.761296+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:ba1e8bdb-9f06-46a8-a28b-70da06c5aa53
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1016/j.neuron.2019.10.012
   name: Routing of Hippocampal Ripples to Subcortical Structures via the Lateral Septum
@@ -188,9 +202,61 @@ relatedResource:
   repository: Neuron
   schemaKey: Resource
   url: https://doi.org/10.1016/j.neuron.2019.10.012
+releaseNotes: "## Changes since version 0.250624.0439\n\nAll 98 files were re-converted
+  from the lab's source files with a new NeuroConv conversion ([catalystneuro/buzsaki-lab-to-nwb](https://github.com/catalystneuro/buzsaki-lab-to-nwb),
+  PRs [#91](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/91), [#104](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/104),
+  [#105](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/105), [#111](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/111)
+  and [#114](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/114)). The conversion
+  fixes problems found by a reproduction attempt ([issue #82](https://github.com/catalystneuro/buzsaki-lab-to-nwb/issues/82)).
+  The same sessions and file names are kept.\n\n**Corrections**\n\n- **Trial labels.**
+  The earlier conversion sorted the trial rows by start time but not their labels,
+  so most trials carried another trial's `direction` and `trial_type` (DT2 0221: 117
+  of 121 rows). Rows and labels are now sorted together; repeated and overlapping
+  trials are kept as in the source and counted in the description.\n- **Position.**
+  x, y and z from the source (z was a copy of y; DT2 has no z). OptiTrack positions
+  are in metres, with `conversion` 0.001 where the lab stored millimetres (the earlier
+  conversion was NaN, and DT8 0217 had metre values labelled mm). DT2's LED tracking
+  is in camera pixels, with no scale to metres in the source. Head orientation is
+  a dimensionless quaternion; DT2's yaw is a CompassDirection in radians.\n- **Timestamps.**
+  The lab's tracking timestamps are rounded to 5 significant digits (whole seconds
+  after 10,000 s). Where every value is a 30 Hz frame time rounded, the frame times
+  are written instead, so samples no longer share timestamps (this includes DT2 0222
+  and 0226, and the trials' `linearized_position_timestamps`).\n- **Units.** Spike
+  times are sorted (the source has unsorted spikes; the units description lists the
+  units affected). Each unit has its shank, cluster, region, largest-waveform channel
+  and waveform, and isolation metrics where the lab computed them for the same sorting.
+  Resolution 1/20,000 s.\n- **Electrodes.** Regions come from the lab's sessionInfo
+  (DT2's electrodes were \"unknown\"); `hpc` is written as hippocampal formation and
+  the lab's label is kept in a `region` column. The theta, LFP, CA1, CA3, LS and reference
+  channels are marked.\n- **Subject.** `subject_id` is the rat (DT1, DT2, DT5, DT7,
+  DT8, DT9); sex U, since the papers had 3 male and 2 female rats without saying which.\n
+  \n**Additions**\n\n- **Ripples and high-frequency oscillations.** The lab's detections
+  (ripplesALL, CA1Ripples, LSRipples, ls_ripples, ripples_ls) are TimeIntervals tables
+  with peak time, power, frequency and amplitude, each described with its detector,
+  channels and stored parameters; ripplesNREM and ripplesWAKE are boolean columns
+  of ripplesALL. The stored detection parameters differ in places from the papers'
+  methods, as the descriptions say.\n- **DT1's channels.** DT1's 34 channels include
+  four in no spike group (unused probe channels 1 and 27, and 32 to 33 above the probe);
+  they are in a `no_spike_group` electrode group, with region \"unknown\" where the
+  lab's 32 labels stop.\n- **Sleep states** wherever the lab's `SleepState.states.mat`
+  exists, with HED tags (WAKE: Awake; NREM: Asleep; REM: Asleep and the SCORE library's
+  Sleep-stage-REM).\n- **Trial conditions** with each condition's linearization template,
+  and the lab's linearized position per trial.\n- **Ontology terms** (HERD) for the
+  species and the recorded regions (lateral septal nucleus, hippocampal formation,
+  CA1, CA3).\n- **Signals** are chunked for streaming (about 32 MB chunks of up to
+  16 channels, instead of 500 samples by 96 channels). The LFP and wide-band signal
+  are the earlier files' data, checked to be whole steps and stored as int16 in channel
+  order, since the lab's `.lfp` and `.dat` are not on its share.\n\n**Known gaps**\n
+  \n- The rats' ages are not in the papers or the source.\n- Electrode positions are
+  not stored: every `.prb` file places sites by list position with one template, so
+  they do not give the geometry. Which probe each depth in a session name belongs
+  to is not stored either.\n- Most hippocampal units are labelled `hpc`, not CA1 or
+  CA3, as in the source.\n- The relative depth of each recording within the lateral
+  septum, and the pre-sleep, maze and post-sleep periods, are not marked in the source
+  files."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.2
-url: https://dandiarchive.org/dandiset/000218/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000218/0.261110.1911
+version: 0.261110.1911
 wasGeneratedBy: []
